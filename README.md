@@ -70,10 +70,10 @@ import {Item} from './entities/Item'
 import {ItemRepository} from './entities/ItemRepository';
 
 export class ItemRepositoryImpl implements ItemRepository {
-  async addItem(): Promise<Item> {
+  async addItem(item: Item): Promise<Item> {
     // Aqui va tu logica para agregar el item, si es una base de datos o una peticion http, o cualquier otra cosa.
-    // A modo de retornar lo que pide la interfaz, retornamos un nuevo item.
-    return new Item('1', 'test', 2, Date.now());
+    // A modo de retornar lo que pide la interfaz, retornamos el item.
+    return item;
   }
 }
 ```
