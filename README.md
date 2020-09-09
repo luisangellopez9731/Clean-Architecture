@@ -20,7 +20,7 @@ Son las reglas del negocio, por ejemplo:
 
 
 Esta division se puede ver en la siguiente imagen:
-<img src="https://xurxodev.com/content/images/2016/07/CleanArchitecture-8b00a9d7e2543fa9ca76b81b05066629.jpg" width="500px"/>
+<div><img src="https://xurxodev.com/content/images/2016/07/CleanArchitecture-8b00a9d7e2543fa9ca76b81b05066629.jpg" width="500px"/></div>
 
 Siendo la parte **amarilla las entidades**, la parte **roja los casos de uso** y las partes **verde y azul la infraestructura**
 
