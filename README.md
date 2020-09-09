@@ -22,7 +22,7 @@ Son las reglas del negocio, por ejemplo:
 Esta division se puede ver en la siguiente imagen:
 <div><img src="https://xurxodev.com/content/images/2016/07/CleanArchitecture-8b00a9d7e2543fa9ca76b81b05066629.jpg" width="500px"/></div>
 
-Siendo la parte **amarilla las entidades**, la parte **roja los casos de uso** y las partes **verde y azul la infraestructura**
+Siendo la parte **amarilla las entidades**, la parte **roja los casos de uso**, la parte **verde la infraestructura** y la parte **azul la aplicacion o presentador**.
 
 ## Implementacion en typescript
 
@@ -147,7 +147,7 @@ Esta arquitectura nos permite simplemente desde nuestra app llamar al metodo **a
 
 ## Consideraciones
 1. Tener en cuenta que no se habla de cambios a las **entidades** por que este es el modulo del negocio que menos deberia cambiar, si se efectuan cambios en las entidades, entonces tenemos que hacer cambios a nuestra **infraestructura**, las **reglas del negocio** y hasta al **presentador**.
-2. Esta es una implementacion de **arquitectura limpia** un poco directa, por que la **implementacion de la infraestructura** esta acoplada a las **reglas del negocio**, de este modo te ahorras instanciar la implementacion de la infraestructura y luego las reglas del negocio, ejemplo:
+2. Esta es una implementacion de **arquitectura limpia** no tan desacoplada, por que la **implementacion de la infraestructura** esta acoplada a las **reglas del negocio**, de este modo te ahorras instanciar la implementacion de la infraestructura y luego las reglas del negocio, ejemplo:
 ```javascript
 const ir = new ItemRepositoryImpl();
 const itemService = new ItemServiceImpl(ir);
